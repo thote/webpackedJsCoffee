@@ -1,0 +1,26 @@
+{
+  "name": "require_coffee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "bundlejs": "./node_modules/webpack/bin/webpack.js",
+    "watch": "./node_modules/webpack/bin/webpack.js -w",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.6.0",
+    "babel-loader": "^6.2.4",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
+    "css-loader": "^0.23.1",
+    "raw-loader": "^0.5.1",
+    "require-cs": "^0.5.4",
+    "requirejs": "^2.1.22",
+    "script-loader": "^0.6.1",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
