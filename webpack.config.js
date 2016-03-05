@@ -1,4 +1,4 @@
-webpack = require("webpack");
+var webpack = require("webpack");
 var path = require('path');
 
 var coffeeDir = path.resolve(__dirname, './coffee');
@@ -38,7 +38,6 @@ module.exports = {
   },
    
   resolve: {
-    // Directories that contain our modules
     root: [__dirname],
 
     alias: {
@@ -48,7 +47,6 @@ module.exports = {
       libs: libsDir
     },
  
-    // Extensions used to resolve modules
     extensions: ['', '.js', '.coffee'],
   },
 
