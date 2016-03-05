@@ -1,8 +1,10 @@
 delta ? {}
+delta.coffee = delta.coffee ? {}
 
 console.log("coffe loader - 2")
 
-func = ->
+render = ->
 	console.log("coffee drinking - 2")
+	'<li> This is coffee-3 </li>'
 
-delta.two = func;
+delta.coffee.render2 = render;

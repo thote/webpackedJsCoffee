@@ -1,4 +1,6 @@
 
+import  'libs/jquery.min';
+
 import 'js/jsOne';
 import 'js/jsTwo';
 
@@ -10,16 +12,18 @@ import Clazz from 'es6/Class1';
 
 var main = () => {
 	console.log("inside es6 func");
+	$(document).ready(function () {
+	    $('#content').html('<strong> Hello</strong>');
 
-	var clazz = new Clazz();
-	clazz.doSomething();
-
-	delta.jsOne();
-	delta.jsTwo();
-
-	delta.one();
-	delta.two();
-	delta.three();
+	    [delta.js.render1, 
+	    delta.js.render2,
+	    delta.coffee.render1,
+	    delta.coffee.render2,
+	    delta.coffee.render3,
+	    new Clazz().render].forEach((render) => {
+	    	$('#features').append(render());
+	    });
+	});	
 }
 
 main();

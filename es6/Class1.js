@@ -6,4 +6,8 @@ export default class NewClass {
 	doSomething() {
 	console.log("this is the class");
 	}
+
+	render() {
+		return '<li> This is ES6 class </li>';
+	}
 }

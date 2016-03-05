@@ -1,11 +1,12 @@
 if (typeof delta === "undefined" || delta === null) delta = {};
-
+delta.js = delta.js || {};
 
 console.log("jsTwo.js - loading");
 
-func = function() {
+render = function() {
 	console.log("js func - 2");
+	return '<li> This is oldjs-2 </li>';
 }
 
-delta.jsTwo = func;
+delta.js.render2 = render;
 

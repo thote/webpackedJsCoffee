@@ -4,12 +4,10 @@ var path = require('path');
 var coffeeDir = path.resolve(__dirname, './coffee');
 var es6Dir = path.resolve(__dirname, './es6');
 var jsDir = path.resolve(__dirname, './js');
+var libsDir = path.resolve(__dirname, './libs');
 
 module.exports = {
-   // entry: "./coffeeMain.coffee",
-  //entry: "./main.js",    
-    entry: "./es6/es6main.js",                
-   //  entry: "./js/main.js",
+    entry: "./es6/es6main.js", 
   output: {
     filename: "./dist/bundle.js"
   },
@@ -22,14 +20,14 @@ module.exports = {
       },
       { 
         test: /\.js$/,  
-        include: [es6Dir],
+        include: [es6Dir, libsDir],
         exclude: [jsDir],
         loader: 'babel-loader?presets[]=es2015'
       },
       { 
         test: /\.js$/,  
         include: [jsDir],
-        exclude: [es6Dir],
+        exclude: [es6Dir, libsDir],
         loader: 'script-loader'
       }
     ]
@@ -46,7 +44,8 @@ module.exports = {
     alias: {
       coffee: coffeeDir,
       es6: es6Dir,
-      js: jsDir
+      js: jsDir,
+      libs: libsDir
     },
  
     // Extensions used to resolve modules
