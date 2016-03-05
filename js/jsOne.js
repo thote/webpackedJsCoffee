@@ -1,11 +1,11 @@
 if (typeof delta === "undefined" || delta === null) delta = {};
 
 
-console.log("jsTwo.js - loading");
+console.log("jsOne.js - laoding");
 
 func = function() {
-	console.log("js func - 2");
+	console.log("js func - 1");
 }
 
-delta.two = func;
+delta.jsOne = func;
 

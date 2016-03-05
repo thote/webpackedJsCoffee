@@ -2,9 +2,9 @@ delta ? {}
 
 console.log("coffe loader - main")
 
-require './coffeeOne';
-require './coffeeTwo';
-require './coffeeThree';
+require 'coffee/coffeeOne';
+require 'coffee/coffeeTwo';
+require 'coffee/coffeeThree';
 
 func = ->
 	console.log("coffee drinking - Main");
