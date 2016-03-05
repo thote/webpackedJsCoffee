@@ -22,7 +22,7 @@ module.exports = {
         test: /\.js$/,  
         include: [es6Dir, libsDir],
         exclude: [jsDir],
-        loader: 'babel-loader?presets[]=es2015'
+        loader: 'babel-loader?presets[]=es2015,presets[]=react'
       },
       { 
         test: /\.js$/,  
