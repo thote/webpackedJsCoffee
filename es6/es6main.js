@@ -15,6 +15,9 @@ import ReactDOM from 'react-dom';
 
 import ArduinoComponent from 'es6/ArduinoComponent';
 
+import 'html/partial1.html';
+import 'styles/global.css';
+
 var main = () => {
 	console.log("inside es6 func");
 	$(document).ready(function () {
