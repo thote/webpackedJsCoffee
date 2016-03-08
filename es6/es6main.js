@@ -18,22 +18,27 @@ import ArduinoComponent from 'es6/ArduinoComponent';
 import 'html/partial1.html';
 import 'styles/global.css';
 
-var main = () => {
-	console.log("inside es6 func");
-	$(document).ready(function () {
-	    [delta.js.render1, 
-	    delta.js.render2,
-	    delta.coffee.render1,
-	    delta.coffee.render2,
-	    delta.coffee.render3,
-	    new Clazz().render].forEach((render) => {
-	    	$('#features').append(render());
-	    });
+var renderLegacy = () => {
+  [delta.js.render1,
+    delta.js.render2,
+    delta.coffee.render1,
+    delta.coffee.render2,
+    delta.coffee.render3,
+    new Clazz().render].forEach((render) => {
+    $('#features').append(render());
+  });
+};
 
-	    ReactDOM.render(
-	    	<ArduinoComponent />, 
-	    	document.getElementById('react_content')
-);
+var renderReact = () => {
+  return ReactDOM.render(
+      <ArduinoComponent />,
+      document.getElementById('react_content'));
+};
+
+var main = () => {
+	$(document).ready(function () {
+    renderLegacy();
+    renderReact();
 	});	
 };
 

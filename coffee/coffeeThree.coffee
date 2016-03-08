@@ -1,10 +1,11 @@
 delta ? {}
 delta.coffee = delta.coffee ? {}
 
-console.log("coffe loader - 3")
+console.log "coffee loader - 3"
+CoffeeFour = require 'coffee/CoffeeFour'
 
 render = ->
-	console.log("coffee drinking - 3")
-	'<li> This is coffee-2 </li>'
+  four = new CoffeeFour
+  four.render();
 
 delta.coffee.render3 = render;

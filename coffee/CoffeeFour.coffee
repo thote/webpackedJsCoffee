@@ -1,9 +1,9 @@
 
 class CoffeeFour
-  constructor: (param) ->
-    console.log "constructor"
+  constructor: () ->
+    console.log "coffee class constructor"
 
   render: ->
-    "<div> This is coffee class </div>"
+    "<li> This render is using coffee class </li>"
 
 module.exports = CoffeeFour

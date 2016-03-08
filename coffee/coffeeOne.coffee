@@ -1,6 +1,6 @@
 delta ? {}
 delta.coffee = delta.coffee ? {}
-console.log("coffe loader - 1")
+console.log("coffee loader - 1")
 
 render = ->
 	console.log("coffee drinking - 1");
