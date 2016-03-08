@@ -2,10 +2,10 @@ delta ? {}
 delta.coffee = delta.coffee ? {}
 
 console.log "coffee loader - 3"
-CoffeeFour = require 'coffee/CoffeeFour'
+FilterCoffee = require 'coffee/FilterCoffee'
 
 render = ->
-  four = new CoffeeFour
+  four = new FilterCoffee
   four.render();
 
 delta.coffee.render3 = render;

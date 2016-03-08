@@ -5,8 +5,8 @@ console.log("jsTwo.js - loading");
 
 render = function() {
 	console.log("js func - 2");
-	return '<li> This is oldjs-2 </li>';
-}
+	return '<li> This is venilla JS-2 </li>';
+};
 
 delta.js.render2 = render;
 

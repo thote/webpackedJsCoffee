@@ -8,7 +8,7 @@ import 'coffee/coffeeOne';
 import 'coffee/coffeeTwo';
 import 'coffee/coffeeThree';
 
-import Clazz from 'es6/Class1';
+import Beaglebone from 'es6/Beaglebone';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -24,7 +24,7 @@ var renderLegacy = () => {
     delta.coffee.render1,
     delta.coffee.render2,
     delta.coffee.render3,
-    new Clazz().render].forEach((render) => {
+    new Beaglebone().render].forEach((render) => {
     $('#features').append(render());
   });
 };
