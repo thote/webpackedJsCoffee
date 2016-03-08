@@ -35,6 +35,6 @@ var main = () => {
 	    	document.getElementById('react_content')
 );
 	});	
-}
+};
 
 main();
