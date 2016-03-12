@@ -2,12 +2,13 @@
 
 import React from 'react';
 
-export default class Counter extends React.Component {
+export default class PassengerCount extends React.Component {
 
   render() {
     var styles = {
       passengersContainer: {
-        paddingTop: '15px'
+        paddingTop: '15px',
+        float: 'left'
       },
 
       passengersLabel: {
@@ -17,7 +18,7 @@ export default class Counter extends React.Component {
       },
 
       passengersCounter: {
-        paddingTop: '15px'
+        paddingTop: '10px'
       },
 
       counterButton: {
@@ -31,15 +32,13 @@ export default class Counter extends React.Component {
 
     return (
       <div style={styles.passengersContainer}>
-
         <label style={styles.passengersLabel}>PASSENGERS</label>
 
         <div style={styles.passengersCounter}>
-          <button style={styles.counterButton} type="button"> +</button>
+          <button style={styles.counterButton} type="button"> + </button>
           <label style={styles.counterLabel}>1</label>
-          <button style={styles.counterButton} type="button"> -</button>
+          <button style={styles.counterButton} type="button"> - </button>
         </div>
-
       </div>
     );
   }

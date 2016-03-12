@@ -1,5 +1,6 @@
 "use strict";
-import  'libs/jquery.min';
+
+import 'libs/jquery.min';
 
 import 'js/jsOne';
 import 'js/jsTwo';
