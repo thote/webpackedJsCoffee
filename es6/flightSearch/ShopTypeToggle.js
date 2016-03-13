@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class MilesToggle extends React.Component {
+export default class ShopTypeToggle extends React.Component {
 
   render() {
     var styles = {
@@ -16,7 +16,7 @@ export default class MilesToggle extends React.Component {
         letterSpacing: '1px',
         color: '#a6a6ad'
       },
-      
+
       toggleButtonsSection: {
         paddingTop: '10px'
       }

@@ -15,7 +15,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ArduinoComponent from 'es6/ArduinoComponent';
-import SearchForm from 'es6/SearchForm';
+import SearchForm from 'es6/flightSearch/SearchForm';
 
 import 'html/partial1.html';
 import 'styles/global.css';
